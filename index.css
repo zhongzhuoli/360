@@ -1,0 +1,425 @@
+.shield img:nth-child(1){
+	transform: translate(100px,200px) rotate(40deg) skew(20deg,20deg);
+}
+.shield img:nth-child(2){
+	transform: translate(100px,300px) rotate(40deg) skew(20deg,20deg);
+}
+.shield img:nth-child(3){
+	transform: translate(100px,400px) rotate(40deg) skew(20deg,20deg);
+}
+.shield img:nth-child(4){
+	transform: translate(100px,500px) rotate(40deg) skew(20deg,20deg);
+}
+.shield img:nth-child(5){
+	transform: translate(100px,600px) rotate(40deg) skew(20deg,20deg);
+}
+.shield img:nth-child(6){
+	transform: translate(100px,700px) rotate(40deg) skew(20deg,20deg);
+}
+.shield img:nth-child(7){
+	transform: translate(100px,800px) rotate(40deg) skew(20deg,20deg);
+}
+.shield img:nth-child(8){
+	transform: translate(100px,900px) rotate(40deg) skew(20deg,20deg);
+}
+.shield img:nth-child(9){
+	transform: translate(100px,1000px) rotate(40deg) skew(20deg,20deg);
+}
+			body{
+				margin: 0;
+			}
+			.section{
+				overflow: hidden;
+			}
+			.s1 img{
+				display: block;
+				margin: 70px auto 0;
+			}
+			.box1{
+				margin-top: 0px;
+			}
+			.box1 img{
+				margin: 70px 24px 0px;
+				display: inline-block;
+				opacity: 0;
+			}
+			.section.toggle .box1 img{
+				opacity: 1;
+				margin: 70px 0px 0px;
+				transition: all 2s linear;
+			}
+			.box{
+				position: relative;
+			}
+			.info2{
+				width: 43vw;
+				margin: 20px auto 0px;
+				position: absolute;
+				top: 162px;
+   				 left: 799px;
+			}
+			.shield{
+				width: 430px;
+				font-size: 0px;
+				padding: 100px 100px;
+			}
+			.toggle .shield img{
+				transform: translate(0px,0px) rotate(0deg) skew(0deg,0deg);
+				transition: all 2s;
+			}
+			.box3{
+				position: relative;	
+			}
+			.info3{
+				position: absolute;
+				top: 200px;
+				left: 100px;
+			}
+			@keyframes quanquan{
+				from{transform: rotate(0deg);}
+				to{transform: rotate(360deg);}
+			}
+			.quanquan{
+				position: absolute;
+				top: 140px;
+				left: 970px;
+				animation: quanquan 1s linear infinite;
+			}
+			@keyframes huojian{
+				0%{top: 700px; left: 700px;transform: rotate(-45deg);}
+				25%{top: 250px; left: 700px;transform: rotate(-45deg);}
+				50%{top:250px left: 700px;transform: rotate(45deg);}
+				100%{top: 250px; left: 1100px;transform: rotate(45deg);}
+			}
+			.toggle .huojian{
+				position: absolute;
+				animation: huojian 4s ease-in-out forwards;
+			}
+			.huojian{
+				position: absolute;
+				top: -200px;
+			}
+			.box4{
+				position: relative;
+			}
+			.sosuobox{
+				height: 56px;
+    			width: 521px;
+    			position: absolute;
+    			top: 147px;
+    			left: 81px;
+    			overflow: hidden;
+			}
+			.sosuo{
+				position: absolute;
+				left: -5221px;
+			}
+			.toggle .sosuo{
+				position: relative;
+				animation: sosuohezi 2s ease-out forwards;
+			}
+			@keyframes sosuohezi{
+				0%{left: -521px;}
+				100%{left: 0px;}
+			}
+			.toggle .wenzibox{
+				overflow: hidden;
+				position: absolute;
+				background: url(360/key.png) no-repeat;
+				top: 21px;
+				left: 19px;
+				height: 23px;
+				width: 0px;
+				animation: wenzihezi 2s 2.2s step-start forwards;
+			}
+			@keyframes wenzihezi{
+				20%{width: 21px;}
+				40%{width: 40px;}
+				60%{width: 60px;}
+				80%{width: 79px;}
+				100%{width: 100px;}
+			}
+			.toggle .wangyebox{
+				height: 0px;
+				width: 519px;
+				background: url(360/result.png) no-repeat;
+				position: absolute;
+				top: 200px;
+				left: 81px;
+				animation: wangyehezi 2s 4.5s linear forwards;
+			}
+			@keyframes wangyehezi{
+				0%{height: 0px;}
+				100%{height: 356px;}
+			}
+			.info4{
+				position: absolute;
+				top: 160px;
+				left: 690px;
+			}
+			.box5{
+				position: relative;
+			}
+			.info5{
+				position: absolute;
+				top: 35px;
+				left: 220px;
+			}
+			.bian{position: absolute;
+				top: 295px;
+				left: 255px;
+				height: 435px;
+				width: 1000px;
+				background: rgba(255, 255, 255, 0.15);}
+			.toggle .bian{
+				position: absolute;
+				top: 295px;
+				left: 255px;
+				height: 435px;
+				width: 1000px;
+				background: rgba(255, 255, 255, 0.15);
+			}
+			.ie{
+				position: absolute;
+				top: -10000px;
+				}
+			.zhaungtai{
+				position: absolute;
+				right: -10000px;
+				}	
+			.toggle .ie{
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				opacity: 0;
+				animation: ie 2s 4s linear forwards;
+			}
+			@keyframes ie{
+				0%{opacity:0;}
+				100%{opacity:1;}
+			}
+			.toggle .zhaungtai{
+				position: absolute;
+				bottom: 0px;
+				right: 0px;
+				opacity: 0;
+				animation: zhuangtai 2s 4s linear forwards;
+			}
+			@keyframes zhuangtai{
+				0%{opacity:0;}
+				100%{opacity:1;}
+			}
+			.toggle .daohang{
+				position: absolute;
+				border: 1px solid whitesmoke;
+			    top: 30px;
+			    left: 73px;
+			    width: 0px;
+			    height: 26px;
+			    opacity: 0;
+			    animation: daohang 2s 2s linear forwards;
+			}
+			@keyframes daohang{
+				0%{opacity: 1;width: 0px;}
+				100%{opacity: 1;width: 920px;}
+			}
+			.toggle .shang{
+				border-top: 1px solid whitesmoke;
+				position: absolute;
+				left: 0px;
+				top: -1px;
+				height: 0px;
+				width: 1000px;
+				animation: shang 2s ease forwards;
+				}
+			.toggle .zuo{
+				width: 0px;
+				height: 435px;
+				position: absolute;
+				top: -725px;
+				border-left: 1px solid whitesmoke;
+				animation: zuo 2s ease forwards;
+				}
+			.toggle .you{
+				width: 0px;
+				height: 435px;
+				position: absolute;
+				top: -725px;
+				left: 1000px;
+				border-right: 1px solid whitesmoke;
+				animation: you 2s ease forwards;
+				}
+			.toggle .xia{
+				border-top: 1px solid whitesmoke;
+				position: absolute;
+				top: 404px;
+				left: 0px;
+				height: 0px;
+				width: 1000px;
+				animation: xia 2s ease forwards;
+				}
+			@keyframes shang{
+				0%{left: 1400px;}
+				100%{left: 0px;}
+			}	
+			@keyframes zuo{
+				0%{top: -725px;}
+				100%{top: -1px;}
+			}
+			@keyframes you{
+				0%{top: 444px;}
+				100%{top: -1px;}
+			}
+			@keyframes xia{
+				0%{left: -1400px;}
+				100%{left: 0px;}
+			}	
+			/*移动端设备*/
+			@media all and (max-width: 414px) {
+			/*第一屏*/
+			.s1 .logo{
+				margin: 40px auto 0px;
+				width: 67vw;
+			}
+			.box1{
+				margin-top: -40px;
+			}
+			.box1 img{
+				width: 10vw;
+				margin-top: 40px;
+			}
+			.section .info1{
+				width: 90vw;
+				margin-top: 40px;
+			}
+			/*第二屏*/
+			.shield img:nth-child(1),.shield img:nth-child(2),.shield img:nth-child(3){
+		height: 110px;
+	}
+	.shield img:nth-child(4),.shield img:nth-child(5),.shield img:nth-child(6){
+		height: 130px;
+	}
+	.shield img:nth-child(7),.shield img:nth-child(8),.shield img:nth-child(9){
+		height: 113px;
+			}
+			.shield{
+				width: 80vw;
+				padding: 200px 38px;
+			}
+			.info2{
+				width: 86vw;
+				top: 0;
+    			left: 26px;
+			}
+			/*第三屏*/
+			.info3{
+				width: 86vw;
+				top: 20px;
+    			left: 26px;
+			}	
+			.quanquan{
+				top: 180px;
+				left: 19px;
+				width: 90vw;
+			}
+		
+			.toggle .huojian{
+				top: 280px;
+				left: 113px;
+				width: 40vw;
+				animation: feiji 3s forwards;
+			}
+			@keyframes feiji{
+				0%{transform: translate(0px,300px) rotate(-45deg)}
+				50%{transform: translate(0px,-300px) rotate(-45deg)}
+				60%{transform: translate(0px,-300px) rotate(135deg)}
+				100%{transform: translate(0px,0px) rotate(135deg)}
+			}
+			/*第四屏*/
+			.info4{
+				top: 20px;
+				left: 26px;
+				width: 86vw;
+			}
+			.toggle .sosuobox{
+				top: 194px;
+				left: 19px;
+				width: 90vw;
+			}
+			.sosuo{
+				top: 7px;
+				width: 90vw;
+			}
+			.toggle .wenzibox{
+				top: 19px;
+				left: 11px;
+			}
+			.toggle .wangyebox{
+				top: 236px;
+				left: 19px;
+				width: 90vw;
+				background-size: 90vw;
+			}
+			/*第五屏*/
+			.info5{
+				top: 40px;
+				left: 18px;
+				width: 90vw;
+			}
+			.bian{top: 97px;
+				left: 19px;
+				width: 90vw;}
+			.toggle .bian{
+				top: 97px;
+				left: 19px;
+				width: 90vw;
+			}
+			.toggle .daohang{
+				top: 9px;
+			    left: 23px;
+			    height: 9px;
+			    animation: yidongdaohang 2s 2s ease forwards;
+			}
+			@keyframes yidongdaohang{
+				0%{opacity: 1;width: 0px;}
+				100%{opacity: 1;width: 309px;}
+			}
+			.toggle .shang{
+				width: 339px;
+			}
+			.toggle .xia{
+				width: 339px;
+			}
+			.toggle .you{
+				left: 338px;
+			}
+			.toggle .yidongxia{
+				border-top: 1px solid whitesmoke;
+				position: absolute;
+				top: 433px;
+				left: 0px;
+				height: 0px;
+				width: 339px;
+				animation: yidongxia 2s ease forwards;
+			}
+			@keyframes yidongxia{
+				0%{left: 1400px;}
+				100%{left: 0px;}
+			}
+			.toggle .ie{
+				top: 0px;
+				left: 0px;
+				width: 90vw;
+			}
+			.toggle .zhaungtai{
+				bottom: 4px;
+				right: -2px;
+				width: 90vw;
+			}	
+	}
+			
+			
+
+
+
+
